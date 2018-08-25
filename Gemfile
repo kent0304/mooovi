@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 
 # Use mysql as the database for Active Record
-gem 'mysql2', '0.3.20'
+gem 'mysql2', '0.3.18'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -49,4 +49,9 @@ gem 'mechanize'
 gem 'devise'
 
 gem 'paperclip'
+
+group :production do
+  gem 'rails_12factor'
+end
+
 
