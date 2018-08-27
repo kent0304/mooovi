@@ -11308,3 +11308,10 @@ Processing by ReviewsController#new as HTML
   [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1[0m
   Rendered reviews/new.html.erb within layouts/review_site (6.7ms)
 Completed 200 OK in 32ms (Views: 21.1ms | ActiveRecord: 5.4ms)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /Users/tanakakento/projects/mooovi/app/models/user.rb:11)
