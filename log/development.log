@@ -11315,3 +11315,203 @@ You can opt into the new behavior and remove this warning by setting:
   config.active_record.raise_in_transactional_callbacks = true
 
  (called from <class:User> at /Users/tanakakento/projects/mooovi/app/models/user.rb:11)
+
+
+Started GET "/" for ::1 at 2018-08-27 19:51:40 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (24.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35m (16.7ms)[0m  SELECT  COUNT(`reviews`.`product_id`) AS count_product_id, product_id AS product_id FROM `reviews` GROUP BY `reviews`.`product_id`  ORDER BY count_product_id DESC LIMIT 5
+  [1m[36mProduct Load (8.7ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1[0m
+  [1m[35mProduct Load (3.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 20 LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  [1m[35mReview Load (0.6ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 2[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 6[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 7
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 8[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 9
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 10[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 11
+  [1m[36m (1.0ms)[0m  [1mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 11[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 12
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 13[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 14
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 15[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 16
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 17[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 18
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 19[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 20
+  [1m[36m (0.3ms)[0m  [1mSELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 20[0m
+  Rendered products/index.html.erb within layouts/review_site (74.9ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 404ms (Views: 265.0ms | ActiveRecord: 61.1ms)
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2018-08-27 19:51:41 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2018-08-27 19:51:41 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.6ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (414.8ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2018-08-27 19:51:42 +0900
+
+
+Started GET "/" for ::1 at 2018-08-27 19:52:24 +0900
+Processing by ProductsController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT  COUNT(`reviews`.`product_id`) AS count_product_id, product_id AS product_id FROM `reviews` GROUP BY `reviews`.`product_id`  ORDER BY count_product_id DESC LIMIT 5[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 20 LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 2
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 3[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 4
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 5[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 6
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 7[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 8
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 9[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 10
+  [1m[36mReview Load (0.6ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 11[0m
+  [1m[35m (0.4ms)[0m  SELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 11
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 12[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 13
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 14[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 15
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 16[0m
+  [1m[35mReview Load (0.5ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 17
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 18[0m
+  [1m[35mReview Load (0.5ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 19
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 20[0m
+  [1m[35m (0.8ms)[0m  SELECT AVG(`reviews`.`rate`) FROM `reviews` WHERE `reviews`.`product_id` = 20
+  Rendered products/index.html.erb within layouts/review_site (34.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 58ms (Views: 41.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-08-27 19:52:24 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2018-08-27 19:52:24 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-08-27 19:52:24 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2018-08-27 19:52:24 +0900
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2018-08-27 19:52:24 +0900
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-08-27 19:52:24 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2018-08-27 19:52:24 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/tanakakento/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (197.8ms)
