@@ -610,6 +610,9 @@ GEM
     aws-sdk-translate (1.2.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
+    aws-sdk-v1 (1.67.0)
+      json (~> 1.4)
+      nokogiri (~> 1)
     aws-sdk-waf (1.5.0)
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
@@ -791,6 +794,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (>= 2.0.0)
+  aws-sdk-v1
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 1.2)
