@@ -50,9 +50,8 @@ gem 'devise'
 
 gem 'paperclip'
 
-gem 'aws-sdk', '>= 2.0.0'
+gem 'aws-sdk', '~> 2.3'
 
-gem 'aws-sdk-v1'
 
 
 group :production do
