@@ -26,3 +26,5 @@ module TechReviewSite
     config.assets.precompile += %w( .svg .eot .woff .ttf )
   end
 end
+
+config.assets.initialize_on_precompile = false
